@@ -1,0 +1,97 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-color: #000000;
+}
+
+/*TITULO PRINCIPAL*/
+
+.contenedor {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: background-attachment 2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+}
+.texto {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 120%;
+    margin: 60px;
+    font-weight: 700;
+    z-index: 2;
+}
+
+/*CANCIONES*/
+
+.contenedor1 {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+    transition: background-attachment 2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+}
+.titulo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 100%;
+    font-weight: 900;
+    z-index: 2;
+}
+.letra {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 130%;
+    font-weight: 600;
+    margin-left: 45px;
+    margin-right: 45px;
+    z-index: 2;
+}
+
+/*OPACIDAD*/
+
+.contenedor::before,
+.contenedor1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+.contenedor,
+.contenedor1 {
+    position: relative;
+}
+
+/*ENLACE*/
+
+.link-contenedor1 {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.fija {
+    background-attachment: fixed;
+}
